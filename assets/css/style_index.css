@@ -1,0 +1,129 @@
+/* ======================== General Css ========================*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html
+{
+    overflow: hidden;
+}
+body
+{
+    background-image: url(../images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center center;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.box 
+{
+    border: 2px solid #fff;
+    backdrop-filter: blur(10px);
+}
+.box h1
+{
+    font-size: 70px;
+}
+.box p
+{
+    font-size: 30px;
+}
+.item
+{
+    border: 1px solid #fff;
+}
+.item h2
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+.item h3
+{
+    font-weight: bold;
+}
+.keyboard
+{
+
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(255, 0, 0, 0.3), 0 0px 12px rgba(255, 0, 0, 0.22);
+}
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 50px;
+    height: 35px;
+    border-radius: 1px;
+    border: rgb(20, 19, 19) solid 1px;
+    box-shadow: 0px 3px 8px -1px black;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+.key p
+{
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+}
+.blockKey
+{
+    width: 35px;
+    height: 35px;
+}
+
+.key[mykey="ArrowUp"]
+{
+    width: 40px;
+    margin-left: 10px;
+}
+.key[mykey="ControlLeft"],.key[mykey="ControlRight"],.key[mykey="MetaLeft"],.key[mykey="MetaRight"],.key[mykey="AltLeft"],.key[mykey="AltRight"]
+{
+    width: 60px;
+}
+.key[mykey="Backspace"],.key[mykey="Tab"]
+{
+    width: 80px;
+}
+.key[mykey="Numpad0"],.key[mykey="CapsLock"]
+{
+    width: 90px;
+}
+.key[mykey="Enter"]
+{
+    width: 100px;
+}
+.key[mykey="ShiftLeft"],.key[mykey="ShiftRight"]
+{
+    width: 120px;
+}
+.key[mykey="Space"]
+{
+    width: 350px;
+}
+.key[mykey="NumpadSubtract"]
+{
+    width: 40px;
+}
+.key[mykey="NumpadAdd"],.key[mykey="NumpadEnter"]
+{
+    height: 77px;
+    width: 40px;
+}
+
+.active
+{
+    box-shadow: 0px 2px 5px 0px red;
+    color: red;
+}

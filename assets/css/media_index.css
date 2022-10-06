@@ -1,0 +1,18 @@
+@media only screen and (max-width: 992px) {
+    #home
+    {
+        display: none!important;
+    }
+    #mobile
+    {
+        display: flex!important;
+    }
+    .box p
+    {
+        font-size: 25px;
+    } 
+    body
+    {
+        background-image: url(../images/mobileWallpaper.jpeg);
+    }
+  }

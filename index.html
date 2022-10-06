@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+  <title>Key Info</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.9.1/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style_index.css">
+  <link rel="stylesheet" href="assets/css/media_index.css">
+</head>
+<body>
+  <section id="home" class="d-flex animate__animated animate__fadeIn justify-content-center align-items-center vh-100 py-5">
+    <div class="box text-center p-5 text-white">
+      <h1>Welcome</h1>
+      <p>Press Any Key to get the JavaScript Event Keycode Info </p>
+    </div>
+  </section>
+  <section id="mobile" class="d-flex animate__animated animate__fadeIn justify-content-center align-items-center vh-100 py-5 d-none ">
+    <div class="box text-center p-5 text-white">
+      <p>Sorry But u can use Site only on Computer or Laptops</p>
+    </div>
+  </section>
+  <section id="main" class="container animate__animated animate__fadeIn text-center py-5 vh-100 d-none text-white">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="item pb-2 ">
+          <h2>Event Key</h2>
+          <h3 id="eventKey"></h3>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="item pb-2">
+          <h2>Event Code</h2>
+          <h3 id="eventCode"></h3>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="item pb-2">
+          <h2>Event keyCode</h2>
+          <h3 id="eventWhich"></h3>
+        </div>
+      </div>
+    </div>
+    <div class="keyboard animate__animated animate__fadeIn container-fluid py-2">
+      <div class="row">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-10 d-flex">
+              <div mykey="Escape" class="key" id="escape">Esc</div>
+              <div class="blockKey"></div>
+              <div mykey="F1" class="key">F1</div>
+              <div mykey="F2" class="key">F2</div>
+              <div mykey="F3" class="key">F3</div>
+              <div mykey="F4" class="key">F4</div>
+              <div class="blockKey"></div>
+              <div mykey="F5" class="key">F5</div>
+              <div mykey="F6" class="key">F6</div>
+              <div mykey="F7" class="key">F7</div>
+              <div mykey="F8" class="key">F8</div>
+              <div class="blockKey"></div>
+              <div mykey="F9" class="key">F9</div>
+              <div mykey="F10" class="key">F10</div>
+              <div mykey="F11" class="key">F11</div>
+              <div mykey="F12" class="key">F12</div>
+            </div>
+            <div class="col-2 d-flex">
+              <div mykey="PrintScreen" class="key"><p>PrtScr<br>SysRq</p></div>
+              <div mykey="ScrollLock" class="key"><p>Scroll<br>Lock</p></div>
+              <div mykey="Pause" class="key"><p>Pause<br>Break</p></div>
+            </div>
+    
+          </div>
+          <div class="row">
+            <div class="col-10 d-flex">
+              <div mykey="Backquote" class="key">`</div>
+              <div mykey="Digit1" class="key">1</div>
+              <div mykey="Digit2" class="key">2</div>
+              <div mykey="Digit3" class="key">3</div>
+              <div mykey="Digit4" class="key">4</div>
+              <div mykey="Digit5" class="key">5</div>
+              <div mykey="Digit6" class="key">6</div>
+              <div mykey="Digit7" class="key">7</div>
+              <div mykey="Digit8" class="key">8</div>
+              <div mykey="Digit9" class="key">9</div>
+              <div mykey="Digit0" class="key">0</div>
+              <div mykey="Minus" class="key">-</div>
+              <div mykey="Equal" class="key">=</div>
+              <div mykey="Backspace" class="key"><p>Back Space</p></div>
+            </div>
+            <div class="col-2 d-flex">
+              <div mykey="Insert" class="key"><p>Insert</p></div>
+              <div mykey="Home" class="key"><p>Home</p></div>
+              <div mykey="PageUp" class="key"><p>Page<br>Up</p></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 d-flex">
+              <div mykey="Tab" class="key">Tap&#160;<i class="bi bi-arrow-left-right"></i></div>
+              <div mykey="KeyQ" class="key">Q</div>
+              <div mykey="KeyW" class="key">W</div>
+              <div mykey="KeyE" class="key">E</div>
+              <div mykey="KeyR" class="key">R</div>
+              <div mykey="KeyT" class="key">T</div>
+              <div mykey="KeyY" class="key">Y</div>
+              <div mykey="KeyU" class="key">U</div>
+              <div mykey="KeyI" class="key">I</div>
+              <div mykey="KeyO" class="key">O</div>
+              <div mykey="KeyP" class="key">P</div>
+              <div mykey="BracketLeft" class="key">[</div>
+              <div mykey="BracketRight" class="key">]</div>
+              <div mykey="Backslash" class="key">\ |</div>
+            </div>
+            <div class="col-2 d-flex">
+              <div mykey="Delete" class="key"><p>Delete</p></div>
+              <div mykey="End" class="key"><p>End</p></div>
+              <div mykey="PageDown" class="key"><p>Page<br>Down</p></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 d-flex">
+              <div myKey="CapsLock" class="key">Caps Lock</div>
+              <div myKey="KeyA" class="key">A</div>
+              <div myKey="KeyS" class="key">S</div>
+              <div myKey="KeyD" class="key">D</div>
+              <div myKey="KeyF" class="key">F</div>
+              <div myKey="KeyG" class="key">G</div>
+              <div myKey="KeyH" class="key">H</div>
+              <div myKey="KeyJ" class="key">J</div>
+              <div myKey="KeyK" class="key">K</div>
+              <div myKey="KeyL" class="key">L</div>
+              <div myKey="Semicolon" class="key">;</div>
+              <div myKey="Quote" class="key">'</div>
+              <div myKey="Enter" class="key"><i class="bi bi-arrow-return-left"></i>&#160; Enter</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 d-flex">
+              <div mykey="ShiftLeft" class="key">Shift</div>
+              <div mykey="KeyZ" class="key">Z</div>
+              <div mykey="KeyX" class="key">X</div>
+              <div mykey="KeyC" class="key">C</div>
+              <div mykey="KeyV" class="key">V</div>
+              <div mykey="KeyB" class="key">B</div>
+              <div mykey="KeyN" class="key">N</div>
+              <div mykey="KeyM" class="key">M</div>
+              <div mykey="Comma" class="key">,</div>
+              <div mykey="Period" class="key">.</div>
+              <div mykey="Slash" class="key">/</div>
+              <div mykey="ShiftRight" class="key">Shift</div>
+            </div>
+            <div class="col-2 d-flex">
+              <div class="blockKey"></div>
+              <div mykey="ArrowUp" class="key"><i class="bi bi-arrow-up"></i></div>
+              <div class="blockKey"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 d-flex">
+              <div myKey="ControlLeft" class="key">Ctrl</div>
+              <div myKey="MetaLeft" class="key"><i class="bi bi-windows"></i></div>
+              <div myKey="AltLeft" class="key">Alt</div>
+              <div myKey="Space" class="key">Space</div>
+              <div myKey="AltRight" class="key">Alt</div>
+              <div myKey="MetaRight" class="key" ><i class="bi bi-windows"></i></div>
+              <div myKey="ContextMenu" class="key" ><i class="bi bi-menu-button-wide-fill"></i></div>
+              <div myKey="ControlRight" class="key" >Ctrl</div>
+            </div>
+            <div class="col-2 d-flex">
+              <div mykey="ArrowLeft" class="key" ><i class="bi bi-arrow-left"></i></div>
+              <div mykey="ArrowDown" class="key"><i class="bi bi-arrow-down"></i></div>
+              <div mykey="ArrowRight" class="key"><i class="bi bi-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+              <div class="col-2">
+                <div class="row">
+                  <div class="col-9 pe-0">
+                    <div class="d-flex">
+                      <div class="blockKey"></div>
+                      <div class="blockKey"></div>
+                      <div class="blockKey"></div>
+                    </div>
+                    <div class="d-flex">
+                      <div mykey="NumLock" class="key"><p>Num<br>Lock</p></div>
+                      <div mykey="NumpadDivide" class="key">/</div>
+                      <div mykey="NumpadMultiply" class="key">*</div>
+                    </div>
+                    <div class="d-flex">
+                      <div mykey="Numpad7" class="key">7</div>
+                      <div mykey="Numpad8" class="key">8</div>
+                      <div mykey="Numpad9" class="key">9</div>
+                    </div>
+                    <div class="d-flex">
+                      <div mykey="Numpad4" class="key">4</div>
+                      <div mykey="Numpad5" class="key">5</div>
+                      <div mykey="Numpad6" class="key">6</div>
+                    </div>
+                    <div class="d-flex">
+                      <div myKey="Numpad1" class="key">1</div>
+                      <div myKey="Numpad2" class="key">2</div>
+                      <div myKey="Numpad3" mykey="3" class="key">3</div>
+                    </div>
+                    <div class="d-flex">
+                      <div myKey="Numpad0" class="key justify-content-end pe-5">0</div>
+                      <div myKey="NumpadDecimal" class="key">.</div>
+                    </div>
+                  </div>
+                  <div class="col-3 p-0">
+                    <div class="blockKey"></div>
+                    <div myKey="NumpadSubtract" class="key">-</div>
+                    <div myKey="NumpadAdd" class="key">+</div>
+                    <div myKey="NumpadEnter" class="key"><p>Enter</p></div>
+                  </div>
+                 </div>
+
+              </div>
+      </div>
+
+
+    </div>
+  </section>
+  
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
