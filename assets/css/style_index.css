@@ -26,6 +26,13 @@ body
     border: 2px solid #fff;
     backdrop-filter: blur(10px);
 }
+.icon button i
+{
+   color: #fff;
+   border: none!important;
+   box-shadow: none!important;
+   outline: none!important;
+}
 .box h1
 {
     font-size: 70px;
@@ -86,7 +93,6 @@ body
 .key[mykey="ArrowUp"]
 {
     width: 40px;
-    margin-left: 10px;
 }
 .key[mykey="ControlLeft"],.key[mykey="ControlRight"],.key[mykey="MetaLeft"],.key[mykey="MetaRight"],.key[mykey="AltLeft"],.key[mykey="AltRight"]
 {
@@ -126,4 +132,12 @@ body
 {
     box-shadow: 0px 2px 5px 0px red;
     color: red;
+}
+
+
+.icon
+{
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
 }

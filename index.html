@@ -19,12 +19,14 @@
   <link rel="stylesheet" href="assets/css/media_index.css">
 </head>
 <body>
-  <section id="home" class="d-flex animate__animated animate__fadeIn justify-content-center align-items-center vh-100 py-5">
-    <div class="box text-center p-5 text-white">
+  <section id="home" class="d-flex justify-content-center align-items-center vh-100 py-5">
+    <div class="box text-center p-5 text-white animate__animated animate__fadeIn">
       <h1>Welcome</h1>
       <p>Press Any Key to get the JavaScript Event Keycode Info </p>
     </div>
   </section>
+  <!-- Target -->
+ 
   <section id="mobile" class="d-flex animate__animated animate__fadeIn justify-content-center align-items-center vh-100 py-5 d-none ">
     <div class="box text-center p-5 text-white">
       <p>Sorry But u can use Site only on Computer or Laptops</p>
@@ -33,21 +35,30 @@
   <section id="main" class="container animate__animated animate__fadeIn text-center py-5 vh-100 d-none text-white">
     <div class="row">
       <div class="col-md-4">
-        <div class="item pb-2 ">
+        <div class="item pb-2 position-relative">
           <h2>Event Key</h2>
           <h3 id="eventKey"></h3>
+          <div class="icon position-absolute">
+            <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy me!" data-clipboard-target="#eventKey" class="btn"> <i class="bi bi-clipboard"></i></button>
+          </div>
         </div>
       </div>
       <div class="col-md-4 ">
-        <div class="item pb-2">
+        <div class="item pb-2 position-relative">
           <h2>Event Code</h2>
           <h3 id="eventCode"></h3>
+          <div class="icon position-absolute">
+            <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy me!" data-clipboard-target="#eventCode" class="btn"> <i class="bi bi-clipboard"></i></button>
+          </div>
         </div>
       </div>
       <div class="col-md-4 ">
-        <div class="item pb-2">
+        <div class="item pb-2 position-relative">
           <h2>Event keyCode</h2>
           <h3 id="eventWhich"></h3>
+          <div class="icon position-absolute">
+            <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy me!" data-clipboard-target="#eventWhich" class="btn"> <i class="bi bi-clipboard"></i></button>
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +66,7 @@
       <div class="row">
         <div class="col-10">
           <div class="row">
-            <div class="col-10 d-flex">
+            <div class="col-10 d-flex justify-content-between  ">
               <div mykey="Escape" class="key" id="escape">Esc</div>
               <div class="blockKey"></div>
               <div mykey="F1" class="key">F1</div>
@@ -81,7 +92,7 @@
     
           </div>
           <div class="row">
-            <div class="col-10 d-flex">
+            <div class="col-10 d-flex justify-content-between ">
               <div mykey="Backquote" class="key">`</div>
               <div mykey="Digit1" class="key">1</div>
               <div mykey="Digit2" class="key">2</div>
@@ -104,7 +115,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-10 d-flex">
+            <div class="col-10 d-flex justify-content-between ">
               <div mykey="Tab" class="key">Tap&#160;<i class="bi bi-arrow-left-right"></i></div>
               <div mykey="KeyQ" class="key">Q</div>
               <div mykey="KeyW" class="key">W</div>
@@ -127,7 +138,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-10 d-flex">
+            <div class="col-10 d-flex justify-content-between ">
               <div myKey="CapsLock" class="key">Caps Lock</div>
               <div myKey="KeyA" class="key">A</div>
               <div myKey="KeyS" class="key">S</div>
@@ -144,7 +155,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-10 d-flex">
+            <div class="col-10 d-flex justify-content-between ">
               <div mykey="ShiftLeft" class="key">Shift</div>
               <div mykey="KeyZ" class="key">Z</div>
               <div mykey="KeyX" class="key">X</div>
@@ -158,14 +169,14 @@
               <div mykey="Slash" class="key">/</div>
               <div mykey="ShiftRight" class="key">Shift</div>
             </div>
-            <div class="col-2 d-flex">
+            <div class="col-2 d-flex justify-content-center">
               <div class="blockKey"></div>
               <div mykey="ArrowUp" class="key"><i class="bi bi-arrow-up"></i></div>
               <div class="blockKey"></div>
             </div>
           </div>
           <div class="row">
-            <div class="col-10 d-flex">
+            <div class="col-10 d-flex justify-content-between ">
               <div myKey="ControlLeft" class="key">Ctrl</div>
               <div myKey="MetaLeft" class="key"><i class="bi bi-windows"></i></div>
               <div myKey="AltLeft" class="key">Alt</div>
@@ -232,6 +243,7 @@
   
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/clipboard.min.js"></script>
   <script src="assets/js/index.js"></script>
 </body>
 

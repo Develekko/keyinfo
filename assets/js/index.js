@@ -4,7 +4,14 @@ var main = document.querySelector("#main");
 var eventKey = document.querySelector("#eventKey");
 var eventCode = document.querySelector("#eventCode");
 var eventWhich = document.querySelector("#eventWhich");
-var key = document.querySelectorAll('.key')
+var key = document.querySelectorAll('.key');
+
+
+new ClipboardJS('.btn');
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
 
 
 document.addEventListener("keyup",function(e){
@@ -42,3 +49,6 @@ document.addEventListener('keydown', (e) => {
       e.preventDefault();
   }
 });
+
+
+
