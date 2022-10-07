@@ -5,6 +5,7 @@ var eventKey = document.querySelector("#eventKey");
 var eventCode = document.querySelector("#eventCode");
 var eventWhich = document.querySelector("#eventWhich");
 var key = document.querySelectorAll('.key');
+var sound = document.querySelector("#keySound");
 
 
 new ClipboardJS('.btn');
@@ -28,12 +29,14 @@ document.addEventListener("keyup",function(e){
   }
   eventCode.innerHTML = e.code;
   eventWhich.innerHTML = e.keyCode;
+  sound.play()
 })
 
 document.body.addEventListener('keydown',(e)=>{
     for(var i=0;i<key.length;i++){
     if(e.code == `${key[i].getAttribute("myKey")}`){
         key[i].classList.add('active');}}
+        sound.play();
 })
 document.body.addEventListener('keyup',(e)=>{
     for(var i=0;i<key.length;i++){
