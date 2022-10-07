@@ -6,6 +6,14 @@
     box-sizing: border-box;
     user-select: none;
 }
+h3
+{
+    user-select: auto;
+}
+::selection
+{
+    background-color: transparent;
+}
 html
 {
     overflow: hidden;
